@@ -7,25 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A01A53132BB17A5E00FCAFBC /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = A01A53122BB17A5E00FCAFBC /* RealityKitContent */; };
 		A01A53152BB17A5E00FCAFBC /* ImmersiveVideoPlayerSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01A53142BB17A5E00FCAFBC /* ImmersiveVideoPlayerSampleApp.swift */; };
 		A01A53172BB17A5E00FCAFBC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01A53162BB17A5E00FCAFBC /* ContentView.swift */; };
 		A01A53192BB17A5E00FCAFBC /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01A53182BB17A5E00FCAFBC /* ImmersiveView.swift */; };
-		A01A531B2BB17A5F00FCAFBC /* ImageBasedLighting.skybox in Resources */ = {isa = PBXBuildFile; fileRef = A01A531A2BB17A5F00FCAFBC /* ImageBasedLighting.skybox */; };
 		A01A531D2BB17A6000FCAFBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A01A531C2BB17A6000FCAFBC /* Assets.xcassets */; };
 		A01A53202BB17A6000FCAFBC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A01A531F2BB17A6000FCAFBC /* Preview Assets.xcassets */; };
+		A01A53282BB17B8B00FCAFBC /* PlayerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01A53272BB17B8B00FCAFBC /* PlayerState.swift */; };
+		A01A532D2BB18E2100FCAFBC /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = A01A532C2BB18E2100FCAFBC /* AsyncAlgorithms */; };
+		A01A53312BB1CD3B00FCAFBC /* AppSceneId.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01A53302BB1CD3B00FCAFBC /* AppSceneId.swift */; };
+		A01A53332BB1D67500FCAFBC /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = A01A53322BB1D67500FCAFBC /* LICENSE.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A01A530D2BB17A5E00FCAFBC /* ImmersiveVideoPlayerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImmersiveVideoPlayerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A01A53112BB17A5E00FCAFBC /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		A01A53142BB17A5E00FCAFBC /* ImmersiveVideoPlayerSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveVideoPlayerSampleApp.swift; sourceTree = "<group>"; };
 		A01A53162BB17A5E00FCAFBC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A01A53182BB17A5E00FCAFBC /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
-		A01A531A2BB17A5F00FCAFBC /* ImageBasedLighting.skybox */ = {isa = PBXFileReference; lastKnownFileType = file.skybox; path = ImageBasedLighting.skybox; sourceTree = "<group>"; };
 		A01A531C2BB17A6000FCAFBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A01A531F2BB17A6000FCAFBC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A01A53212BB17A6000FCAFBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A01A53272BB17B8B00FCAFBC /* PlayerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerState.swift; sourceTree = "<group>"; };
+		A01A53302BB1CD3B00FCAFBC /* AppSceneId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSceneId.swift; sourceTree = "<group>"; };
+		A01A53322BB1D67500FCAFBC /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A01A53132BB17A5E00FCAFBC /* RealityKitContent in Frameworks */,
+				A01A532D2BB18E2100FCAFBC /* AsyncAlgorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,8 +46,8 @@
 		A01A53042BB17A5E00FCAFBC = {
 			isa = PBXGroup;
 			children = (
+				A01A53322BB1D67500FCAFBC /* LICENSE.txt */,
 				A01A530F2BB17A5E00FCAFBC /* ImmersiveVideoPlayerSample */,
-				A01A53102BB17A5E00FCAFBC /* Packages */,
 				A01A530E2BB17A5E00FCAFBC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,23 +63,14 @@
 		A01A530F2BB17A5E00FCAFBC /* ImmersiveVideoPlayerSample */ = {
 			isa = PBXGroup;
 			children = (
+				A01A532A2BB17B9900FCAFBC /* Data */,
+				A01A53292BB17B8F00FCAFBC /* Views */,
 				A01A53142BB17A5E00FCAFBC /* ImmersiveVideoPlayerSampleApp.swift */,
-				A01A53162BB17A5E00FCAFBC /* ContentView.swift */,
-				A01A53182BB17A5E00FCAFBC /* ImmersiveView.swift */,
-				A01A531A2BB17A5F00FCAFBC /* ImageBasedLighting.skybox */,
 				A01A531C2BB17A6000FCAFBC /* Assets.xcassets */,
 				A01A53212BB17A6000FCAFBC /* Info.plist */,
 				A01A531E2BB17A6000FCAFBC /* Preview Content */,
 			);
 			path = ImmersiveVideoPlayerSample;
-			sourceTree = "<group>";
-		};
-		A01A53102BB17A5E00FCAFBC /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				A01A53112BB17A5E00FCAFBC /* RealityKitContent */,
-			);
-			path = Packages;
 			sourceTree = "<group>";
 		};
 		A01A531E2BB17A6000FCAFBC /* Preview Content */ = {
@@ -85,6 +79,24 @@
 				A01A531F2BB17A6000FCAFBC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A01A53292BB17B8F00FCAFBC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A01A53162BB17A5E00FCAFBC /* ContentView.swift */,
+				A01A53182BB17A5E00FCAFBC /* ImmersiveView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A01A532A2BB17B9900FCAFBC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A01A53272BB17B8B00FCAFBC /* PlayerState.swift */,
+				A01A53302BB1CD3B00FCAFBC /* AppSceneId.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,7 +116,7 @@
 			);
 			name = ImmersiveVideoPlayerSample;
 			packageProductDependencies = (
-				A01A53122BB17A5E00FCAFBC /* RealityKitContent */,
+				A01A532C2BB18E2100FCAFBC /* AsyncAlgorithms */,
 			);
 			productName = ImmersiveVideoPlayerSample;
 			productReference = A01A530D2BB17A5E00FCAFBC /* ImmersiveVideoPlayerSample.app */;
@@ -134,6 +146,9 @@
 				Base,
 			);
 			mainGroup = A01A53042BB17A5E00FCAFBC;
+			packageReferences = (
+				A01A532B2BB18E2100FCAFBC /* XCRemoteSwiftPackageReference "swift-async-algorithms" */,
+			);
 			productRefGroup = A01A530E2BB17A5E00FCAFBC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -148,9 +163,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A01A53332BB1D67500FCAFBC /* LICENSE.txt in Resources */,
 				A01A531D2BB17A6000FCAFBC /* Assets.xcassets in Resources */,
 				A01A53202BB17A6000FCAFBC /* Preview Assets.xcassets in Resources */,
-				A01A531B2BB17A5F00FCAFBC /* ImageBasedLighting.skybox in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +177,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A01A53172BB17A5E00FCAFBC /* ContentView.swift in Sources */,
+				A01A53312BB1CD3B00FCAFBC /* AppSceneId.swift in Sources */,
 				A01A53152BB17A5E00FCAFBC /* ImmersiveVideoPlayerSampleApp.swift in Sources */,
+				A01A53282BB17B8B00FCAFBC /* PlayerState.swift in Sources */,
 				A01A53192BB17A5E00FCAFBC /* ImmersiveView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +318,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Player Demo";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Access to Photo Library is required to read video";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +331,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Debug;
 		};
@@ -327,6 +347,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Player Demo";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Access to Photo Library is required to read video";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -338,6 +360,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Release;
 		};
@@ -364,10 +387,22 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		A01A532B2BB18E2100FCAFBC /* XCRemoteSwiftPackageReference "swift-async-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-async-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		A01A53122BB17A5E00FCAFBC /* RealityKitContent */ = {
+		A01A532C2BB18E2100FCAFBC /* AsyncAlgorithms */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = RealityKitContent;
+			package = A01A532B2BB18E2100FCAFBC /* XCRemoteSwiftPackageReference "swift-async-algorithms" */;
+			productName = AsyncAlgorithms;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
